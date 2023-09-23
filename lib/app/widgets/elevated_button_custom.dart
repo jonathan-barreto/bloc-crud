@@ -28,12 +28,12 @@ class ElevatedButtonCustom extends StatelessWidget {
           ),
         );
       },
-      style: const ButtonStyle(
-        fixedSize: MaterialStatePropertyAll(
+      style: ButtonStyle(
+        fixedSize: const MaterialStatePropertyAll(
           Size(250, 50),
         ),
         backgroundColor: MaterialStatePropertyAll(
-          Colors.deepPurpleAccent,
+          Theme.of(context).colorScheme.secondary,
         ),
       ),
       child: const Text(

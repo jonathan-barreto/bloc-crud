@@ -40,9 +40,9 @@ class _UpdatePageState extends State<UpdatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff1C1D21),
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
         title: const Text('Atualizar'),
         centerTitle: true,
       ),
@@ -58,9 +58,9 @@ class _UpdatePageState extends State<UpdatePage> {
           );
           return Center(
             child: contato?.nomeContato == null
-                ? const CircularProgressIndicator(
-                    backgroundColor: Colors.white,
-                    color: Colors.deepPurpleAccent,
+                ? CircularProgressIndicator(
+                    backgroundColor: Theme.of(context).colorScheme.primary,
+                    color: Theme.of(context).colorScheme.secondary,
                   )
                 : SizedBoxUpdate(
                     index: int.parse(args.toString()),

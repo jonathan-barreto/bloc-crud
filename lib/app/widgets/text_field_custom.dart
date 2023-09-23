@@ -15,27 +15,27 @@ class TextFieldCustom extends StatelessWidget {
     return SizedBox(
       width: 250,
       child: TextField(
-        style: const TextStyle(
-          color: Colors.white,
+        style:  TextStyle(
+          color: Theme.of(context).colorScheme.primary,
         ),
         controller: textController,
-        cursorColor: Colors.white,
+        cursorColor: Theme.of(context).colorScheme.primary,
         obscureText: false,
         decoration: InputDecoration(
-          enabledBorder: const OutlineInputBorder(
+          enabledBorder:  OutlineInputBorder(
             borderSide: BorderSide(
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.primary,
             ),
           ),
-          focusedBorder: const OutlineInputBorder(
+          focusedBorder:  OutlineInputBorder(
             borderSide: BorderSide(
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.primary,
             ),
           ),
           border: const OutlineInputBorder(),
           labelText: label,
-          labelStyle: const TextStyle(
-            color: Colors.white,
+          labelStyle:  TextStyle(
+            color: Theme.of(context).colorScheme.primary,
           ),
         ),
       ),

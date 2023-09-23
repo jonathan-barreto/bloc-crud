@@ -12,7 +12,7 @@ class CircleAvatarCustom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.secondary,
       child: TextCustom(
         fontSize: 25,
         text: text,

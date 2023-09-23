@@ -1,3 +1,4 @@
+import 'package:crud/app/core/app_colors.dart';
 import 'package:crud/app/features/home/view/home_page.dart';
 import 'package:crud/app/features/update/views/update_page.dart';
 import 'package:flutter/material.dart';
@@ -7,13 +8,15 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ColorScheme colorScheme = ColorScheme.light(
+      primary: appColors['primaryColor']!,
+      secondary: appColors['secondColor']!,
+      background: appColors['backGroundColor']!,
+    ).copyWith();
+
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: Colors.white,
-        scaffoldBackgroundColor: const Color(0xff1C1D21),
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.deepPurpleAccent,
-        ),
+        colorScheme: colorScheme,
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
