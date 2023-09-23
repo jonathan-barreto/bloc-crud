@@ -9,9 +9,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = ColorScheme.light(
-      primary: appColors['primaryColor']!,
-      secondary: appColors['secondColor']!,
-      background: appColors['backGroundColor']!,
+      primary: AppColors.primaryColor,
+      secondary: AppColors.secondColor,
+      background: AppColors.backgroundColor,
     ).copyWith();
 
     return MaterialApp(
